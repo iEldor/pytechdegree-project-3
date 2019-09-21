@@ -73,6 +73,7 @@ class Game:
         self.clear_screen()
         self.print_title(f"Thank you for using {self.APP_NAME}!")
         logging.info(f"{datetime.today()}: Game Ended")
+        self.lives = 0
         self.game_on = False
     
     def play_again(self):
